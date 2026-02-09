@@ -1,0 +1,83 @@
+/* -----------MOBILE MENU------------ */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#E0CBB4;
+    z-index: 999;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(0, 0);
+}
+.mobile-menu-container {
+    padding: 0 16px;
+}
+.mob-logo {
+    position: absolute;
+    top: 18px;
+    left: 26px;
+}
+.mobile-menu-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+.mobile-menu-close-btn svg {
+   fill: rgb(8, 8, 3);
+}
+.mobile-menu-nav {
+    margin-top: 72px;
+    margin-bottom: auto;
+}
+.mobile-menu .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 128px
+}
+.mobile-menu .nav-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    color: rgb(8, 8, 3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-logo svg {
+    fill: rgb(8, 8, 3);
+}
+.mobile-menu .nav-link:hover,
+.mobile-menu .nav-link:focus {
+    color: rgb(8, 8, 3, 0.5);
+}
+.mobile-menu .nav-link:active {
+    color: rgba(8, 8, 3, 0.7);
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+    display: none;
+    }
+}
