@@ -96,6 +96,18 @@ footer .social-link:active{
     width: 24px;
     height: 24px;
    }
+   .social-icon .fb {
+    width: 20px;
+    height: 20px;
+}
+   .social-icon .insta {
+    width: 18px;
+    height: 18px;
+   }
+   .social-icon .twitter {
+    width: 18px;
+    height: 16px;
+    }
     .inner {
     flex-direction: row;
     align-items: center;
