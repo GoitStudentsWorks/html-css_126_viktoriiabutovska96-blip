@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 320px;
+  max-width: 375px;
   padding: 12px 16px;
   height: 72px;
 }
