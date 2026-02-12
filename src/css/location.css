@@ -50,6 +50,12 @@
     gap: 40px;
 }
 
+.container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
 
 .email-item,
 .phone-item,
@@ -103,9 +109,7 @@
 
 .location-map {
     width: 100%;
-    max-width: 288px;
     height: 307px;
-    margin: 0 auto;
     border-radius: 40px;
     overflow: hidden;
 
@@ -141,8 +145,14 @@
     .location-list {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 24px;
+        gap: 40px;
+
+        
     }
+
+    .container {
+        max-width: 768px;
+        }
 
     .location-map {
         width: 100%;
@@ -154,37 +164,40 @@
 @media screen and (min-width: 1440px) {
 
     .location-container {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: stretch;
-            gap: 24px;
-        }
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 24px;
+    }
+    
+    .container {
+        max-width: 1440px;
+    }
+    
+    .location .container {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
     
     
-        .location .container {
-            padding-left: 64px;
-            padding-right: 64px;
-        }
+    .location-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
     
     
-        .location-list {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
+    .location-map {
+        width: 869px;
+        height: 697px;
+        margin: 0;
     
+    }
     
-        .location-map {
-            width: 869px;
-            height: 697px;
-            margin: 0;
-    
-        }
-    
-        .location-content {
-            width: 507px;
-            flex-shrink: 0;
-        }
+    .location-content {
+        width: 507px;
+        flex-shrink: 0;
+    }
     
     }
